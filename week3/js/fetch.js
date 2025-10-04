@@ -23,19 +23,33 @@ function doStuff(data) {
     console.log("first: ", results);
 }
 
-function doStuffList(data) {
-    console.log(data);
-    const pokeListElement = document.querySelector("#outputList");
-    const pokeList = data.results;
-    pokeList.forEach((currentItem) => {
-        const html = `<li>${currentItem.name}</li>`;
-        // note the += here...
-        pokeListElement.innerHTML += html;
-    });
+
+function compare(a, b) {
+    if (a.name > b.name) {
+        return 1;
+    }
+    else if (a.name < b.name) {
+        return -1;
+    }
+    else return 0;  // a must be equal to b
 }
 
 function sortPokemon(list) {
+    let sortedList = list.sort(compare);
+    return sortedList;
+}
 
+function doStuffList(data) {
+    console.log(data);
+    const pokeListElement = document.querySelector("#outputList");
+    let pokeList = data.results;
+    // sort our list before output it
+    pokeList = sortPokemon(pokeList);
+    pokeList.forEach((currentItem) => {
+        const html = `<li>${currentItem.name}</li>`;
+        //note the += here
+        pokeListElement.innerHTML += html;
+    });
 }
 
 getPokemon(url, doStuff);
