@@ -60,6 +60,44 @@ function manageTasks(e) {
     }
 }
 
+function setUserName() {
+    const name = localStorage.getItem("todo-user");
+    if (name) {
+        document.querySelector(".user").innerText = name;
+    }
+}
+
+function userNameHandler() {
+    const name = document.querySelector("#user").value;
+    localStorage.setItem("todo-user", name);
+    setUserName();
+}
+
+document.querySelector("#userNameButton").addEventListener("click", userNameHandler);
+
+setUserName();
+
+
+/* Manually tried it here
+let container = document.querySelector(".user");
+
+let nameLabel = document.createElement("label");
+nameLabel.innerText = "Enter your name: ";
+let nameInput = document.createElement("input");
+localStorage.set(todo - user, nameInput.value);
+
+let nameButton = document.createElement("button");
+nameButton.innerText = "Submit";
+
+container.appendChild(nameLabel);
+container.appendChild(nameInput);
+container.appendChild(nameButton);
+
+localStorage.get(todo - user) = document.querySelector(".user p");
+*/
+
+
+
 // Add your event listeners here
 document.querySelector("#submitTask").addEventListener("click", newTask);
 document.querySelector("#todoList").addEventListener("click", manageTasks);
