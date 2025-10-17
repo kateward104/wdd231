@@ -73,9 +73,16 @@ function userNameHandler() {
     setUserName();
 }
 
-document.querySelector("#userNameButton").addEventListener("click", userNameHandler);
 
-setUserName();
+function setLocalStorage(key, data) {
+    let stringData = JSON.stringify(data);
+    setLocalStorage(key, stringData);
+}
+
+function getLocalStorage(key) {
+    let data = localStorage.getItem(key);
+    return JSON.parse(data);
+}
 
 
 /* Manually tried it here
@@ -101,6 +108,9 @@ localStorage.get(todo - user) = document.querySelector(".user p");
 // Add your event listeners here
 document.querySelector("#submitTask").addEventListener("click", newTask);
 document.querySelector("#todoList").addEventListener("click", manageTasks);
+document.querySelector("#userNameButton").addEventListener("click", userNameHandler);
+
 
 // render  the initial list of tasks (if any) when the page loads
 renderTasks(tasks);
+setUserName();
