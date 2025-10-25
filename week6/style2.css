@@ -2,6 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: beige;
     font-size: 1.3em;
+    line-height: 1.6;
 }
 
 header {
@@ -11,11 +12,138 @@ header {
 
     h1 {
         text-align: center;
+        font-size: 2.5em;
     }
 
 }
 
 h2 {
+    padding-bottom: 10px;
     color: rgb(56, 152, 56);
-    border-bottom: 1px, solid, rgb(56, 152, 56);
+    border-bottom: 2px solid rgb(56, 152, 56);
+}
+
+main {
+    /* Add padding, a maximum width, centering, and a background color with shadow to make the main content area visually appealing.*/
+    padding: 2em;
+    max-width: 70%;
+    background-color: white;
+    margin: 2em auto;
+    /* centers the box horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 20px;
+}
+
+ul li,
+ol li {
+    padding: 0.3em;
+}
+
+/*Add padding to lists for better readability.*/
+
+li {
+    margin-bottom: 10px;
+}
+
+
+p,
+li {
+    max-width: 70ch;
+}
+
+/*restrict the width to no more than 70 characters.*/
+
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plant-section__content {
+    text-align: center;
+}
+
+img {
+    border-radius: 0.5em;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
+
+
+footer {
+    background-color: rgb(44, 50, 50);
+    padding: 2em;
+    text-align: center;
+    width: 100%;
+
+    p {
+        color: white;
+    }
+}
+
+/*Provide a consistent footer with background color and text alignment at the bottom of the page.*/
+
+@media screen and (min-width: 700px) {
+    .plant-section_content {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-around;
+    }
+
+    /* form styling */
+
+
+    .form-container {
+        margin-top: 20px;
+        border: solid 1px rgb(56, 152, 56);
+        padding: 20px;
+
+        border-radius: 8px;
+        background-color: rgb(44, 50, 50);
+        color: white;
+    }
+
+    .form-container label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(44, 50, 50);
+        border-radius: 4px;
+    }
+
+    .form-container button {
+        background-color: rgb(56, 152, 56);
+        color: white;
+        border: none;
+        padding: 10px 15 px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form-container button:hover {
+        background-color: white;
+        color: rgb(56, 152, 56)
+    }
+
+
+    .form-error {
+        color: red;
+        margin-top: 10px;
+    }
+
 }
