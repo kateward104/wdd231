@@ -6,7 +6,7 @@ function submitForm(event) {
     console.log(this.name.value);
     let error = "";
 
-    if (nameIput.value === "") {
+    if (nameInput.value === "") {
         error += "Name is required.\n";
     }
 
