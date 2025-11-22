@@ -1,0 +1,80 @@
+/* badUx.css */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    width: 1000px;
+    color: #aaa;
+    padding: 50px;
+}
+
+h1,
+h2 {
+    color: green;
+    text-align: left;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+p,
+ul li {
+    color: black;
+}
+
+form {
+    background-color: white;
+}
+
+/*
+ul {
+}*/
+
+li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+
+/* This is some super bad design. 
+The font is Comic Sans, which is terrible. 
+The background is pink and unbearable. 
+All the text color is horrible.
+The image is horrible resolution and too big.
+The body copy is on each line and is horrible. 
+I don't even know what the last box is supposed to be. 
+*/
+
+
+
+
+/*
+    How long it took
+    Any issues you encountered
+    Whether you used the site navigation or the search function
+    Any observations you made about the user experience
+    Any suggestions you have for improvement
+
+*/
+
+/*
+    Find out the time and location of a church service in Dijon France.
+    This one took me less than a minute. I used "find a church" in the site navigation, looked up "Dijon France" and found the time on the pop up modal.
+
+    You have recently been called as a Primary teacher. Find resources to help you plan a lesson for Sunday.
+    This was a bit more confusing for me. At first I went to "Books and Lessons" thinking that they might have a comprehensive book for the year.
+    Then I went to "Children and Youth" and I didn't find anything particularly helpful.
+    Then I realized I should go to "Come Follow Me" and then "Additional Resources for Teaching Children." I found good information there, I just don't usually think about doing Come Follow Me with primary children, 
+    because I don't have any sibilings in primary. This took me about 4 minutes. I might add something in the Books and Lessons just because I didn't see anything there for primary teachers.
+    
+    Find information about what your role is in supporting your Primary children with their personal development goals.
+    I looked up "primary personal development" and I was able to find information about the children's guidebook as the first option. There is also a video on the page for leaders and parents. Very quick and efficient. 
+    
+    Find information about the church's stance on the environment.
+    There were many different options when I looked up "environment." The general newsroom link was about 3 or 4 options down, which may have been better at the top, but gave me exactly what I wanted. This too, was fast.
+*/
